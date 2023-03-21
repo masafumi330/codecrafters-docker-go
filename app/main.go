@@ -13,9 +13,7 @@ func main() {
 	// Uncomment this block to pass the first stage!
 	//
 	command := os.Args[3]
-	fmt.Printf("==========\n%#v\n", command)
 	args := os.Args[4:len(os.Args)]
-	fmt.Printf("==========\n%#v\n", args)
 
 	cmd := exec.Command(command, args...)
 	cmd.Stdout = os.Stdout
